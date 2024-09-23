@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153524038-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-153524038-1');
+  </script>    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Contact | High-Flyer</title>
+  <script>
+    (function() {
+      // 初始化页面
+      var os = function() {
+        var ua = navigator.userAgent,
+          isWindowsPhone = /(?:Windows Phone)/.test(ua),
+          isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+          isAndroid = /(?:Android)/.test(ua),
+          isFireFox = /(?:Firefox)/.test(ua),
+          isChrome = /(?:Chrome|CriOS)/.test(ua),
+          isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),
+          isiPhone = /(?:iPhone)/.test(ua) && !isTablet,
+          isPc = !isiPhone && !isAndroid && !isSymbian;
+        return {
+          isTablet: isTablet,
+          isiPhone: isiPhone,
+          isAndroid: isAndroid,
+          isPc: isPc
+        };
+      }();
+
+      var _width = ((document.documentElement.clientWidth > 750) ? 750 : document.documentElement.clientWidth);
+      document.documentElement.style.fontSize = _width / 7.5 + "px";
+
+      if (os.isPc) {
+        document.documentElement.className = "pc-device";
+      }
+
+      if (os.isiPhone) {
+        document.documentElement.className = "ios-device";
+
+        if ((screen.availHeight == 812) && (screen.availWidth == 375)) {
+          document.documentElement.className = "ios-device iphonex";
+        }
+        if ((screen.availHeight == 896) && (screen.availWidth == 414)) {
+          document.documentElement.className = "ios-device iphonex";
+        }
+      }
+    })(window);
+  </script>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body id="page-top" class="body contact">
+  <div class="container">
+    <div class="header">
+      <a href="#" class="logo">
+        <img src="./image/logo-en.png" width="1rem" alt="">
+      </a>
+    </div>
+    <div class="content">
+      <div class="sidebar">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a class="active" href="./contact.html">CONTACT <span>&gt;</span></a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="wrap">
+          <div class="paragraph">
+          <br>
+          <p>Whether you‘re focused on building, preserving, or transferring wealth, we bring you a team of professionals in planning, investing and trading, carefully curated to match your goals, help you seize opportunities with collective experience that can mitigate risks and maximize returns.</p>
+          <br>
+          <br>
+          <p>INVESTOR RELATIONS</p>
+          <br>
+          <a href=mailto:investors@highflyer-investment.com>investors@highflyer-investment.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="content">
+        <div class="copyright">Copyright © 2024 High-Flyer. All Rights Reserved.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
